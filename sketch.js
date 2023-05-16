@@ -74,6 +74,10 @@ function draw() {
     car[i].update();
     car[i].offscreen(width, height);
   }
+
+  fill(255);
+  noStroke();
+  text("Click = Place Road Point.\n'Enter' = Confirm Track\n'R' = Reset\n'Up' = Accelerate\n'Down' = Brake\n 'Left/Right' = Turn", 20, 20);
 }
 
 function checkTrack(meshA1, meshB1, meshA2, meshB2, car) {
